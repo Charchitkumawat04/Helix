@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import AuthenticatedComponent from './question';
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -41,7 +42,7 @@ function App() {
           <h1>Authenticated Component</h1>
           <p>You are logged in!</p>
           <button class="button" onClick={handleBack}><p id="nav_title">Back</p></button>
-          <button class="button"><p id="nav_title">Ask Question</p></button>      
+          <button class="button" onClick={AuthenticatedComponent/}><p id="nav_title">Ask Question</p></button>      
         </div>
       );
     }
