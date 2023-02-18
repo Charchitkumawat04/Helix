@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
+import axios from 'axios';
 
-function App() {
+function Login() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
   
     const handleLogin = () => {
@@ -22,12 +22,12 @@ function App() {
           <form onSubmit={handleLogin}>
             <label for="formGroupExampleInput">
               Username:
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter username" />
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input" />
             </label>
             <br />
             <label for="formGroupExampleInput2">
               Password:
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Enter Password" type="password" name="password" />
+              <input class="form-control" id="formGroupExampleInput2" placeholder="Another input" type="password" name="password" />
             </label>
             <br />
             <button class="button" type="submit"><p id="nav_title">Login</p></button>
@@ -47,4 +47,4 @@ function App() {
     }
   }
   
-  export default App;
+  export default Login;
